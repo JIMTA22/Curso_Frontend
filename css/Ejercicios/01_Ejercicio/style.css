@@ -1,0 +1,38 @@
+body {
+    background-color: #efefef;
+}
+
+.caja {
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    border-top: 0px;
+}
+
+.cabecera {
+    padding: 10px;
+    border-bottom: solid 1px #eee;
+}
+ 
+.contenido {
+    padding: 10px;
+}
+
+.footer {
+    padding: 10px;
+    border-top: solid 1px #eee;
+}
+
+.primario {
+    background-color: #0090ff;
+    padding: 5px;
+    border: 0px;
+    color: white;
+}
+
+.secundario {
+    background-color: #aaa;
+    padding: 5px;
+    border: 0px;
+    color: white;
+}

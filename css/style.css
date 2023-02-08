@@ -1,0 +1,82 @@
+body {
+    background-color: #efefef;
+    margin: 0 8px 0 8px;
+}
+
+#parrafo {
+    display: flex;
+    color: white;
+    background-color: rgb(6, 36, 67);
+    margin: 10px 0 10px 0;
+    padding: 0px;
+    border: solid 8px tomato;
+    border-bottom: solid 8px burlywood;
+    border-top: solid 8px burlywood;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    height: 80px;
+    width: 300px;
+}
+
+.etiqueta {
+    color: tomato;
+}
+
+.container {
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px grey;
+    padding: 5px;
+    background-color: white;
+}
+
+.ejemplo {
+    color: rgb(6, 36, 67);
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.5;
+    word-spacing: 5px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    text-shadow: 3px 2px 3px rgba(0,0,0,0.3);
+}
+
+.test {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 1.2em;
+    color: rgb(6, 36, 67);
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.5;
+    word-spacing: 5px;
+}
+
+.link {
+    color: hotpink;
+    background-color: red;
+    border: solid 2px #c00;
+    letter-spacing: 2px;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.link:visited {
+    color: blue;
+}
+
+.link:active {
+    color: red;
+}
+
+.link:hover {
+    color: gray;
+    text-decoration: underline;
+}
