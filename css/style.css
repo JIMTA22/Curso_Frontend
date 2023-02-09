@@ -38,6 +38,7 @@ body {
     text-indent: 50px;
     line-height: 1.5;
     word-spacing: 5px;
+    background-image: radial-gradient(circle 800px at center, red, blue );
 }
 
 a {
@@ -57,26 +58,122 @@ a {
     text-indent: 50px;
     line-height: 1.5;
     word-spacing: 5px;
+    background-image: linear-gradient(to bottom left, red 15%, blue);
 }
 
-.link {
+.enlace {
+    display:inline-block;
     color: hotpink;
     background-color: red;
     border: solid 2px #c00;
     letter-spacing: 2px;
     padding: 4px;
     border-radius: 6px;
+    margin-bottom: 10px;
 }
 
-.link:visited {
+.enlace:visited {
     color: blue;
 }
 
-.link:active {
+.enlace:active {
     color: red;
 }
 
-.link:hover {
+.enlace:hover {
     color: gray;
     text-decoration: underline;
 }
+
+ul {
+    list-style: none;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding-left: 0px;
+}
+
+li{
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table th {
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+span {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+#tamaño {
+    width: 200px;
+    height: 65px;
+    overflow: scroll;
+    background-color: cyan;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+img {
+    float: right;
+}
+
+img:hover{
+    opacity: 0.9;
+}
+
+div p {
+    background-color: #4caf50;
+    border: solid 1px black;
+    margin: 0px 210px 0px 0px;
+    padding: 5px;
+}
+
+.caja {
+    position: relative;
+    left: 50px;
+    margin: 50px 0px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    box-shadow: 1px 2px 5px rgb(6, 36, 67);
+    border-radius: 4px;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+} 
+
+.caja:hover {
+/*     transform: rotate(20deg); */
+/*     transform: skew(5deg); */
+    transform: scale(1.05);
+    background-color: goldenrod
+/*     width: 250px; */
+} 
