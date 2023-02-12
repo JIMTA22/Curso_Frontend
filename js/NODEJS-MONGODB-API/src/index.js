@@ -20,6 +20,7 @@ const express = require('express'); // solicitamos el módulo 'express'
 const mongoose = require('mongoose'); // solicitamos el módulo 'mongoose'
 require('dotenv').config(); //Solicitamos y ejecutamos el módulo 'dotenv'
 const userRoutes = require('./routes/user'); // solicitamos las rutas para usuarios 
+const path = require('path') // Solicitamos el módulo path para poder traer de manera automática la ruta de nuestro proyecto.
 
 const app = express();
 
@@ -36,7 +37,8 @@ app.use("/api", userRoutes);
 // Definimos las rutas para nuestra aplicación. En el ejemplo, estamos definiendo la ruta principal '/' de nuestra API ó aplicación, la cual va ha recibir una función que recibe como parametros'req'(objeto de la petición) y 'res'(objeto de la respuesta) y nosotros vamos a responder a la petición usando el objeto de la respuesta 'res' con su metodo .send para responder.
 // Es un ejemplo para comprobar que nuestro servidor está respondiendo a peticiones de algún cliente.
 app.get('/',(req, res) => {
-    res.send('Hola Mundo'); // usamos el objeto de la respuesta 'res' con su metodo .send para responder.
+  //  res.send('<h1>Hola Mundo!!!</h1>');// usamos el objeto de la respuesta 'res' con su metodo .send para responder con un texto plano.
+  res.sendFile(path.join(__dirname + "/index.html")) // SendFile nos permite enviar un archivo HTML. La constante '__dirname' contiene la ruta raiz de nuestro proyecto.
 });
 
 //mongodb connection
