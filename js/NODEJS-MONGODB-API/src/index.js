@@ -44,12 +44,12 @@ app.get('/',(req, res) => {
 //mongodb connection
 //usamos el objeto mongoose y su metodo .connect para conectarme con la DB.
 //Le pasamos la variable de enterno que hemos definido con la conexión a nuestra DB.
-// el metodo .connect nos puede enviar una promesa, la tratramos y si la conexión fue exitosa lo indicamos por la terminal, en caso contrario indicamos el número del errror por la terminal.
+//El metodo .connect nos puede enviar una promesa, la tratramos y si la conexión fue exitosa lo indicamos por la terminal, en caso contrario indicamos el número del errror por la terminal.
 mongoose.set("strictQuery", true);
 mongoose
 .connect(process.env.MONGODB_URI)
 .then(() => console.log('🚀 Connected to MongoDB Atlas'))
-.catch ((error) => console.log(error));
+.catch ((error) => console.log(`Error to connect MongoDB: ${error}`));
 
 // El servidor WEB se pone a la escucha en el puerto espeficicado e imprime un mensaje por la terminal indicado que está funcionando.
-app.listen(port, () => console.log('🚀 Server listing on port', port));
+app.listen(port, () => console.log(`🚀 Server listing on port ${port}`));

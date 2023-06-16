@@ -58,4 +58,4 @@ router.delete("/users/:id", (req, res) => {
 });
  
  
-module.exports = router; // exportamos el enrutador que hemos creado 
+module.exports = router; // exportamos el enrutador que hemos creado para poder usarlo en el archivo principal de la aplicación.
